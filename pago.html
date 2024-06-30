@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar - Tienda Online</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <div class="logo">
+            <img src="logo-tecnostore.png" alt="TecnoStore">
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <form action="#" method="GET">
+              <input type="text" placeholder="Buscar productos...">
+             <input class="button" type="submit" placeholder="Buscar">
+            </form>
+          </div>
+        </div>
+      </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="payment-details">
+                <form action="#" class="payment-form">
+                    <label for="card_number">Número de Tarjeta:</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required>
+
+                    <label for="card_name">Nombre en la Tarjeta:</label>
+                    <input type="text" id="card_name" name="card_name" placeholder="Nombre Completo" required>
+
+                    <div class="expiry-cvv">
+                        <div class="expiry">
+                            <label for="expiry_date">Fecha de Expiración:</label>
+                            <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/AA" required>
+                        </div>
+                        <div class="cvv">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button">Pagar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

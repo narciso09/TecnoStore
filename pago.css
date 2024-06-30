@@ -1,0 +1,150 @@
+/* Estilos generales y reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  /* Estilos de la cabecera */
+  .main-header {
+    background-color: #0057B8;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #ffc20e;
+}
+
+.search-bar {
+    margin-left: auto;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.search-bar .button {
+    background-color: #ffc20e;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+}
+
+.search-bar button:hover {
+    background-color: #e0a800;
+}
+/* Estilos del contenido principal */
+.main-content {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.payment-details {
+    padding: 20px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.payment-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry,
+.cvv {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.payment-form button {
+    background-color: #0057B8;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.payment-form button:hover {
+    background-color: #004280;
+}
+
+/* Estilos del pie de página */
+.main-footer {
+    background-color: #0057B8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
